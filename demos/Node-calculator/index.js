@@ -20,8 +20,8 @@ const calculator = require('./calculator');
 // capture all input arguments from the commandline
 const input = process.argv.slice(2);
 
-// check if the input is valid (has 3 arguments)
-if (process.argv.length <= 3) {
+// check if the input is valid (has 3 arguments: num1, operator, num2)
+if (process.argv.length !== 5) {
   console.error('Usage: <app> 1 + 2');
   process.exit(1);
 }
@@ -29,7 +29,7 @@ if (process.argv.length <= 3) {
 // join the input as a string
 const inputString = input.join(' ');
 
-if(process.env.DEBUG) console.log(inputString);
+if (process.env.DEBUG) console.log(inputString);
 
 // regular expression to extract the first number
 let num1 = /^(\d+)/;

@@ -1,6 +1,6 @@
 /**
  * @description Test cases for calculator.js
- * This class provides unit tests for all the operations 
+ * This file provides unit tests for all the operations 
  * in my calculator.js file.
  */
 
